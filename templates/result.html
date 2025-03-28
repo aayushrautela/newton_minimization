@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results - Newton Minimization</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        .results { background: #f5f5f5; padding: 20px; border-radius: 5px; margin-bottom: 20px; }
+        img { max-width: 100%; height: auto; display: block; margin: 20px auto; }
+        a { display: inline-block; margin-top: 20px; color: #007bff; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <h1>Optimization Results</h1>
+    
+    <div class="results">
+        <h2>Input Parameters</h2>
+        <p>Initial X: {{ x }}</p>
+        <p>Initial Y: {{ y }}</p>
+        <p>Learning Rate (alpha): {{ alpha }}</p>
+        
+        <h2>Results</h2>
+        <p>Found minimum at: ({{ x_min|round(4) }}, {{ y_min|round(4) }})</p>
+        <p>Iterations: {{ iterations }}</p>
+    </div>
+
+    <img src="{{ url_for('static', filename=plot_url) }}" alt="Optimization Path" style="max-width: 100%; height: auto;">
+    <p>Plot saved as: {{ plot_url }}</p>
+    
+    <a href="/">Run another optimization</a>
+</body>
+</html>
