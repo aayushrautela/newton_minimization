@@ -36,3 +36,21 @@ pip install numpy matplotlib
 python lab1_v4.py
 ```
 
+## Testing
+
+The repository includes automated tests for the Newton's method implementation. To run the tests:
+
+```bash
+python -m unittest test_newton.py
+```
+
+Test coverage includes:
+- Function evaluation at known points
+- Gradient calculation verification
+- Hessian matrix validation
+- Convergence behavior checks
+
+Tests are designed to handle:
+- Multiple local minima
+- Singular Hessian cases
+- Reasonable convergence expectations
