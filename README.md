@@ -18,5 +18,21 @@ This project implements Newton's method in Python to find the local minima of a 
 Clone this repository to your local machine:
 
 ```bash
-git clone [repository-url]
-cd [repository-directory-name]
+git clone https://github.com/aayushrautela/newton_minimization.git
+cd newton_minimization
+```
+
+### 2. Prerequisites
+
+Install mathplotlib
+
+```bash
+pip install numpy matplotlib
+```
+
+### 3. Run
+
+```bash
+python lab1_v4.py
+```
+
